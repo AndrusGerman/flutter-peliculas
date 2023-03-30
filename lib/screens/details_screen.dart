@@ -5,7 +5,6 @@ import 'package:peliculas/widgets/widgets.dart';
 class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: Cambiar luego por una instancia de movie
     final Movie movie = ModalRoute.of(context)!.settings.arguments as Movie;
 
     return Scaffold(
@@ -48,7 +47,7 @@ class _CustomAppBar extends StatelessWidget {
           child: Text(
             movie.title,
             style: TextStyle(fontSize: 16),
-            textAlign: TextAlign.center,
+            textAlign: TextAlignVertical.center,
           ),
         ),
         background: FadeInImage(
@@ -128,7 +127,7 @@ class _Overview extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       child: Text(
         movie.overview,
-        textAlign: TextAlign.justify,
+        textAlign: TextAlignVertical.center,
         style: Theme.of(context).textTheme.titleMedium,
       ),
     );

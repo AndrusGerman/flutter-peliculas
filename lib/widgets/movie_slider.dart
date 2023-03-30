@@ -50,7 +50,7 @@ class _MovieSliderState extends State<MovieSlider> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 this.widget.title!,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: 600),
               ),
             ),
           SizedBox(height: 5),
@@ -107,7 +107,7 @@ class _MoviePoster extends StatelessWidget {
             movie.title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.center,
+            textAlign: TextAlignVertical.center,
           )
         ],
       ),
